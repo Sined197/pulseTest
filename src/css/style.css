@@ -1,0 +1,212 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu */
+header{
+    position: relative;
+}
+
+nav {
+    height: 50px;
+    background-color: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;             
+}
+ 
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color:rgb(0, 0, 0, .6);
+}
+
+.logo_link {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.logo_official {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.502);
+    font-weight: 400;
+    opacity: 0.5;      
+}
+.call_us {
+    margin-top: 17px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: right;     
+}
+
+.phone_number {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: right;     
+}
+
+.order {
+    display: block;
+    margin-top: 15px;
+    width: 170px;
+    height: 45px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21);  
+}
+
+/* section one */
+
+.section_one {
+    min-height: 715px;
+    background: url(../images/section_one/dackground_img_one.jpg) center center/cover no-repeat;
+    padding: 150px 0 130px 0;
+}
+
+.title_main {
+    margin: 0;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.title_h2 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section_one .text {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section_one .button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 211px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21);
+}
+
+/* section two */
+
+.section_two {
+    min-height: 900px;
+}
+
+.advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 115px;
+    height: 27px;    
+    background: #000000;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 11px;
+    
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+
+.section_two_title {
+    margin-top: 35px;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.section_two_box {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icon_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    min-width: 480px;
+}
+
+.icon_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 115px;
+    min-height: 115px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.icon_text {
+    width: 340px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    line-height: 1.235;
+    font-weight: 300;      
+}
+.icon_text span {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    align-items: center;
+    color: #1EACC7;
+}

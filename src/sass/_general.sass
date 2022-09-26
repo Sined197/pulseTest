@@ -1,0 +1,447 @@
+header
+	position: relative
+	height: 50px
+nav
+	position: fixed
+	width: 100%
+	height: 50px
+	background-color: #212121
+	z-index: 5
+
+.hamburger
+	display: none
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+
+	&_link
+		font-size: 15px
+		color: rgb(255, 255, 255)
+		font-weight: 300
+		&:hover
+			text-decoration: none
+			color: $main_color
+	&_item
+		border-right: 2px dotted black
+		padding-right: 28px
+		&:last-child
+			border-right: none
+
+.subheader
+	position: absolute
+	width: 100%
+	top: 50px
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	.logo_link
+		display: block
+		width: 100%
+		margin-top: 15px
+	.logo_official
+		font-size: 13px
+		color: rgba(255, 255, 255, 0.502)
+		font-weight: 400
+		opacity: 0.5
+	.call_us
+		margin-top: 17px
+		font-size: 12px
+		color: rgb(255, 255, 255)
+		font-weight: 300
+		text-align: right
+	.phone_number
+		display: block
+		font-size: 22px
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		font-weight: 400
+		text-align: right
+	.xs-visible
+		display: none
+	.order
+		display: block
+		margin-top: 15px
+		width: 170px
+		height: 45px
+		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		font-size: 14px
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+		text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
+
+
+
+.section_one
+	min-height: 715px
+	background: url(../images/section_one/dackground_img_one.jpg) center (center / cover) no-repeat
+	padding: 150px 0 130px 0
+
+.title_main
+	margin: 0
+	color: #FFFFFF
+	text-align: center
+	text-transform: uppercase
+	font-weight: 900
+	font-size: 60px
+	line-height: 60px
+
+.title_h2
+	margin: 0
+	margin-top: 20px
+	font-weight: bold
+	font-size: 36px
+	line-height: 36px
+	text-align: center
+	text-transform: uppercase
+	color: #FFFFFF
+
+.section_one
+	.text
+		margin-top: 30px
+		font-weight: 300
+		font-size: 18px
+		line-height: 24px
+		text-align: center
+		color: #FFFFFF
+
+	.button
+		display: block
+		margin: 0 auto
+		margin-top: 120px
+		width: 211px
+		height: 63px
+		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		font-size: 18px
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+		text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
+
+.section_two
+	min-height: 900px
+	padding: 70px 0 65px 0
+	&_title
+		margin-top: 35px
+		font-weight: 900
+		font-size: 38px
+		text-align: center
+		text-transform: uppercase
+		color: #222222
+		margin-bottom: 0
+
+.advantage
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0 auto
+	width: 115px
+	height: 27px
+	background: #000000
+	font-weight: 300
+	font-size: 11px
+	line-height: 11px
+	text-transform: uppercase
+	color: #FFFFFF
+
+.icon_box
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 40px
+
+
+.icon_img
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 115px
+	height: 115px
+	background-color: #1eacc7
+	border-radius: 100%
+	margin-right: 26px
+
+.icon_text
+	width: 340px
+	font-size: 15px
+	color: rgb(0, 0, 0)
+	line-height: 21px
+	font-weight: 300
+
+	span
+		font-weight: 400
+		font-size: 17px
+		line-height: 21px
+		align-items: center
+		color: #1EACC7
+
+.section_three
+	min-height: 865px
+	background: url(../images/section_three/background.png) center (center/cover) no-repeat
+	padding: 50px 0 80px 0
+
+.section_three
+	.text
+		text-align: center
+		font-size: 17px
+		font-weight: 400
+		color: #000
+
+
+.phone_box
+	@include box
+	@include box_text
+	position: relative
+	&_1
+		background: url(../images/section_three/img_one.png) center (center/cover) no-repeat
+	&_2
+		background: url(../images/section_three/img_two.png) center (center/cover) no-repeat
+	&_3
+		background: url(../images/section_three/img_three.png) center (center/cover) no-repeat
+	&_4
+		background: url(../images/section_three/img_four.png) center (center/cover) no-repeat
+	&_5
+		background: url(../images/section_three/img_five.png) center (center/cover) no-repeat
+	&_6
+		background: url(../images/section_three/img_six.png) center (center/cover) no-repeat
+	.plus_img
+		position: absolute
+		display: flex 
+		justify-content: center
+		align-items: center
+		left: 50%
+		bottom: 35px
+		transform: translateX(-50%)
+		width: 26px
+		height: 25px
+		background-color: #000000
+		border-radius: 100%
+		cursor: pointer
+		&:before
+			content: ''
+			display: block
+			width: 15px
+			height: 2px
+			background-color: $main_color
+			transition: 0.2s
+		&:after
+			content: ''
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			display: block
+			width: 2px
+			height: 15px
+			background-color: $main_color
+			transition: 0.2s
+		&:hover
+			&:before, &:after
+				background-color: $two_color
+			
+.section_four
+	height: 900px
+	.car_blok_1
+		position: relative
+		height: 500px
+		padding-top: 60px
+		background-color: #070716
+		.opportunities
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 auto
+			width: 115px
+			height: 27px
+			background: #FFFFFF
+			font-weight: 300
+			font-size: 11px
+			line-height: 11px
+			text-transform: uppercase
+			color: #000000
+		.title
+			margin-top: 30px
+			font-weight: 900
+			font-size: 38px
+			text-align: center
+			text-transform: uppercase
+			color: #ffffff
+			margin-bottom: 0
+		.small_title
+			text-align: center
+			font-size: 17px
+			font-weight: 400
+			color: #ffffff
+		img
+			position: absolute
+			top: 230px
+			left: 50%
+			transform: translateX(-50%)
+	.car_blok_2
+		padding-top: 220px
+		height: 400px
+		background: url(../images/section_three/background.png)	center (center/cover) no-repeat
+		.car_every_day
+			font-size: 17px
+			font-weight: 300
+			text-align: center
+			color: #3f3f3f
+			
+.section_five
+	padding: 70px 0 80px 0
+	&_title
+		margin-top: 35px
+		font-weight: 900
+		font-size: 38px
+		text-align: center
+		text-transform: uppercase
+		color: #222222
+		margin-bottom: 0
+	&_box
+		margin: 31px 0 31px 0
+		&_3, &_4
+			margin-bottom: 0
+			ol
+				li
+					&:before	
+						background: url(../images/section_five/plus_red.png) center (center/cover) no-repeat
+	&_subtitle
+		font-size: 22px
+		font-weight: 400
+		line-height: 24px
+		color: $main_color
+		&_red
+			color: $two_color
+		&_2
+			font-size: 17px
+			font-weight: 300
+			color: $main_color
+	&_ol		
+		list-style-type: none
+		padding-left: 50px
+		li	
+			margin-top: 12px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				left: -33px
+				display: inline-block
+				width: 21px
+				height: 20px
+				background: url(../images/section_five/plus_blue.png) center (center/cover) no-repeat
+
+.section_six
+	position: relative
+	height: 720px
+	padding: 50px 0
+	background: url(../images/section_six/background.jpg) center (center/cover) no-repeat
+	&_laible
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 auto
+		width: 115px
+		height: 27px
+		background: #FFFFFF
+		font-weight: 300
+		font-size: 11px
+		line-height: 11px
+		text-transform: uppercase
+		color: #000000
+	&_title
+		margin-top: 30px
+		font-weight: 900
+		font-size: 38px
+		text-align: center
+		text-transform: uppercase
+		color: #ffffff
+		margin-bottom: 0
+		&_2
+			text-align: center
+			font-size: 17px
+			font-weight: 400
+			color: #ffffff
+	&_link
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)
+		font-size: 15px
+		font-weight: 300
+		text-transform: uppercase
+		color: $main_color
+
+.futor
+	position: relative
+	min-height: 153
+	padding: 10px 0 35px 0
+	&_line
+		margin: 0 auto
+		width: 300px
+		height: 3px
+		background: $main_color
+	&_ol
+		display: flex
+		margin-top: 30px
+		margin-bottom: 0px
+		justify-content: space-around
+		list-style-type: none
+		li
+			.futor_links_1
+				font-size: 15px
+				font-weight: 300
+				color: #070716
+				text-transform: uppercase
+		&_2
+			display: flex
+			margin-top: 10px
+			margin-bottom: 0px
+			justify-content: space-between
+			list-style-type: none
+			li
+				.futor_links_2
+					font-size: 11px
+					font-weight: 400
+					color: #999999
+					text-transform: uppercase
+	&_language
+		display: block
+		margin-top: 10px
+		text-align: center
+		font-size: 11px
+		font-weight: 400
+		color: $main_color
+		text-transform: uppercase
+	&_links
+		display: flex
+		justify-content: space-between
+		width: 160px
+		position: absolute
+		left: 0.8%
+		bottom: 72px
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 35px
+			height: 35px
+			background-color: #070716
+			border-radius: 100% 
+	&_link_2
+		display: flex
+		justify-content: space-between
+		position: absolute
+		width: 300px
+		right: 0.8%	
+		bottom: 77px
